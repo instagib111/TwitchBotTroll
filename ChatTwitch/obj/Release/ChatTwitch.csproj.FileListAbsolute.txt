@@ -1,0 +1,8 @@
+F:\Projets\ChatTwitch\ChatTwitch\bin\Release\ChatTwitch.exe.config
+F:\Projets\ChatTwitch\ChatTwitch\bin\Release\ChatTwitch.exe
+F:\Projets\ChatTwitch\ChatTwitch\bin\Release\ChatTwitch.pdb
+F:\Projets\ChatTwitch\ChatTwitch\obj\Release\ChatTwitch.Form1.resources
+F:\Projets\ChatTwitch\ChatTwitch\obj\Release\ChatTwitch.Properties.Resources.resources
+F:\Projets\ChatTwitch\ChatTwitch\obj\Release\ChatTwitch.csproj.GenerateResource.Cache
+F:\Projets\ChatTwitch\ChatTwitch\obj\Release\ChatTwitch.exe
+F:\Projets\ChatTwitch\ChatTwitch\obj\Release\ChatTwitch.pdb

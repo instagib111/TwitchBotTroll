@@ -1,0 +1,48 @@
+c:\users\stagiaire\documents\visual studio 2015\Projects\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe.config
+c:\users\stagiaire\documents\visual studio 2015\Projects\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe
+c:\users\stagiaire\documents\visual studio 2015\Projects\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.pdb
+c:\users\stagiaire\documents\visual studio 2015\Projects\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csprojResolveAssemblyReference.cache
+c:\users\stagiaire\documents\visual studio 2015\Projects\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Form1.resources
+c:\users\stagiaire\documents\visual studio 2015\Projects\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Properties.Resources.resources
+c:\users\stagiaire\documents\visual studio 2015\Projects\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csproj.GenerateResource.Cache
+c:\users\stagiaire\documents\visual studio 2015\Projects\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.exe
+c:\users\stagiaire\documents\visual studio 2015\Projects\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.pdb
+H:\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe.config
+H:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.exe
+H:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.pdb
+H:\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe
+H:\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.pdb
+H:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csprojResolveAssemblyReference.cache
+H:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Form1.resources
+H:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Properties.Resources.resources
+H:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csproj.GenerateResource.Cache
+E:\MSProject\ChatTwitchV2\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe.config
+E:\MSProject\ChatTwitchV2\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.exe
+E:\MSProject\ChatTwitchV2\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.pdb
+E:\MSProject\ChatTwitchV2\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe
+E:\MSProject\ChatTwitchV2\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.pdb
+E:\MSProject\ChatTwitchV2\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csprojResolveAssemblyReference.cache
+E:\MSProject\ChatTwitchV2\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Form1.resources
+E:\MSProject\ChatTwitchV2\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Properties.Resources.resources
+E:\MSProject\ChatTwitchV2\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csproj.GenerateResource.Cache
+D:\Users\InstaGib111\Documents\Chris\C#\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe.config
+D:\Users\InstaGib111\Documents\Chris\C#\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.exe
+D:\Users\InstaGib111\Documents\Chris\C#\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.pdb
+E:\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe.config
+E:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.exe
+E:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.pdb
+E:\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe
+E:\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.pdb
+E:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csprojResolveAssemblyReference.cache
+E:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Form1.resources
+E:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Properties.Resources.resources
+E:\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csproj.GenerateResource.Cache
+F:\Projets\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe.config
+F:\Projets\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.exe
+F:\Projets\ChatTwitch\ChatTwitch\bin\Debug\ChatTwitch.pdb
+F:\Projets\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csprojResolveAssemblyReference.cache
+F:\Projets\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Form1.resources
+F:\Projets\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.Properties.Resources.resources
+F:\Projets\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.csproj.GenerateResource.Cache
+F:\Projets\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.exe
+F:\Projets\ChatTwitch\ChatTwitch\obj\Debug\ChatTwitch.pdb
