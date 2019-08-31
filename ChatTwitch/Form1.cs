@@ -34,12 +34,13 @@ namespace ChatTwitch
         string password, userName, tvTwitch, tempRepeatMsg, tempRepeatMsg2, tempRepeatMsg3, tempRepeatMsg4;
         string [] repeatAfterUserName;
         bool repeat = false;
-        
+        bool after = false;
 
-        #region function
 
-        //Scroll
-        private void scroll()
+		#region function
+
+		//Scroll
+		private void scroll()
         {
             if (cbx_autoscroll.Checked)
             {
@@ -79,8 +80,26 @@ namespace ChatTwitch
             lbx_currentChat.Items.Add(userName.ToUpper() + ":" + message);
             scroll();
         }
-        // repeat any message with delay
-        private void repeatMessage(string message)
+
+		// after response
+		private void afterResponse(string response)
+		{
+			sendMessage(response);
+		}
+		// after message
+		private bool afterMessage(string message, string nick, out string response)
+		{
+			response = "";
+			if (message == tbx_afterOnText.Text)
+			{
+				response = String.Format(tbx_afterDoText.Text, nick);
+				return true;
+			}
+			return false;
+		}
+
+		// repeat any message with delay
+		private void repeatMessage(string message)
         {
             int time = message.Length * (int)nud_timeByLettre.Value + (int)nud_minTimeRepeat.Value; //en ms
             if (!timer_repeat.Enabled)
@@ -196,7 +215,12 @@ namespace ChatTwitch
                             tbx_password.Text = line;
                         else if (i == 3)
                             tbx_suffix.Text = line;
-                        i++;
+						else if (i == 4)
+							tbx_afterOnText.Text = line;
+						else if (i == 5)
+							tbx_afterDoText.Text = line;
+
+						i++;
                     }
                     if (i > 0)
                         cbx_rememberMe.Checked = true;
@@ -254,8 +278,27 @@ namespace ChatTwitch
                 btn_setting.Text = "Setting >>";
             }
         }
-        // repeat button
-        private void btn_repeat_Click(object sender, EventArgs e)
+
+		// after button
+		private void Btn_after_Click(object sender, EventArgs e)
+		{
+			if (btn_after.ForeColor == Color.Red)
+			{
+				btn_after.ForeColor = Color.Green;
+				btn_after.Text = "On";
+				after = true;
+			}
+			else if (btn_after.ForeColor == Color.Green)
+			{
+				btn_after.ForeColor = Color.Red;
+				btn_after.Text = "Off";
+				after = false;
+			}
+		}
+
+
+		// repeat button
+		private void btn_repeat_Click(object sender, EventArgs e)
         {
             if(btn_repeat.ForeColor == Color.Red && !String.IsNullOrEmpty(tbx_repeatUserName.Text))
             {
@@ -290,28 +333,33 @@ namespace ChatTwitch
         private void cbx_rememberMe_CheckedChanged(object sender, EventArgs e)
         {
             if(isInit)
-                saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text);
+                saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text, tbx_afterOnText.Text, tbx_afterDoText.Text);
         }
 
         //on unfocus tvtwitch
         private void tbx_tvTwitch_Leave(object sender, EventArgs e)
         {
-            saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text);
+            saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text, tbx_afterOnText.Text, tbx_afterDoText.Text);
         }
         //on unfocus userName
         private void tbx_userName_Leave(object sender, EventArgs e)
         {
-            saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text);
+            saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text, tbx_afterOnText.Text, tbx_afterDoText.Text);
         }
 
-        //on unfocus password
-        private void tbx_password_Leave(object sender, EventArgs e)
+		private void Tbx_afterOnText_Leave(object sender, EventArgs e)
+		{
+			saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text, tbx_afterOnText.Text, tbx_afterDoText.Text);
+		}
+
+		//on unfocus password
+		private void tbx_password_Leave(object sender, EventArgs e)
         {
-            saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text);
+            saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text, tbx_afterOnText.Text, tbx_afterDoText.Text);
         }
         private void tbx_suffix_Leave(object sender, EventArgs e)
         {
-            saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text);
+            saveOrDelete(pathMyDoc, tbx_tvTwitch.Text, tbx_userName.Text, tbx_password.Text, tbx_suffix.Text, tbx_afterOnText.Text, tbx_afterDoText.Text);
         }
         //clear all lbx_currentChat
         private void btn_clear_Click(object sender, EventArgs e)
@@ -345,8 +393,9 @@ namespace ChatTwitch
 
 
 
-        // Send message
-        private void btn_send_Click(object sender, EventArgs e)
+
+		// Send message
+		private void btn_send_Click(object sender, EventArgs e)
         {
             try
             {
@@ -420,9 +469,15 @@ namespace ChatTwitch
                 
                 if (repeat && repeatAfter(autor, repeatAfterUserName))
                     repeatMessage(message);
+
+				string response = "";
+				if (after && afterMessage(message, autor, out response))
+					afterResponse(response);
+
                 scroll();
             }
         }
-        #endregion
-    }
+
+		#endregion
+	}
 }

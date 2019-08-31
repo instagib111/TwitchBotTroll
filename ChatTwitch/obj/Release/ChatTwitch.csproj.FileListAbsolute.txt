@@ -6,3 +6,13 @@ F:\Projets\ChatTwitch\ChatTwitch\obj\Release\ChatTwitch.Properties.Resources.res
 F:\Projets\ChatTwitch\ChatTwitch\obj\Release\ChatTwitch.csproj.GenerateResource.Cache
 F:\Projets\ChatTwitch\ChatTwitch\obj\Release\ChatTwitch.exe
 F:\Projets\ChatTwitch\ChatTwitch\obj\Release\ChatTwitch.pdb
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\bin\Release\ChatTwitch.exe.config
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\bin\Release\ChatTwitch.exe
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\bin\Release\ChatTwitch.pdb
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\obj\Release\ChatTwitch.csprojAssemblyReference.cache
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\obj\Release\ChatTwitch.Form1.resources
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\obj\Release\ChatTwitch.Properties.Resources.resources
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\obj\Release\ChatTwitch.csproj.GenerateResource.cache
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\obj\Release\ChatTwitch.csproj.CoreCompileInputs.cache
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\obj\Release\ChatTwitch.exe
+C:\Users\Insta\Source\Repos\TwitchBotTroll\ChatTwitch\obj\Release\ChatTwitch.pdb
