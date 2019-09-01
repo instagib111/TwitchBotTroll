@@ -123,6 +123,7 @@
 			this.tbx_repeatUserName.Name = "tbx_repeatUserName";
 			this.tbx_repeatUserName.Size = new System.Drawing.Size(180, 26);
 			this.tbx_repeatUserName.TabIndex = 5;
+			this.ttip_suffix.SetToolTip(this.tbx_repeatUserName, "sépare tes pseudo par un espace");
 			this.tbx_repeatUserName.TextChanged += new System.EventHandler(this.tbx_repeatUserName_TextChanged);
 			// 
 			// tbx_send
@@ -437,7 +438,8 @@
 			this.tbx_afterOnText.Name = "tbx_afterOnText";
 			this.tbx_afterOnText.Size = new System.Drawing.Size(261, 26);
 			this.tbx_afterOnText.TabIndex = 31;
-			this.tbx_afterOnText.Text = "TO";
+			this.tbx_afterOnText.Text = "TO|to|To";
+			this.ttip_suffix.SetToolTip(this.tbx_afterOnText, "séparation par des mots par |");
 			this.tbx_afterOnText.Leave += new System.EventHandler(this.Tbx_afterOnText_Leave);
 			// 
 			// tbx_afterDoText
@@ -447,6 +449,7 @@
 			this.tbx_afterDoText.Size = new System.Drawing.Size(261, 26);
 			this.tbx_afterDoText.TabIndex = 32;
 			this.tbx_afterDoText.Text = "/timeout {0} 100";
+			this.ttip_suffix.SetToolTip(this.tbx_afterDoText, "{0} = nickname");
 			this.tbx_afterDoText.Leave += new System.EventHandler(this.Tbx_afterOnText_Leave);
 			// 
 			// lbl_afterOnText

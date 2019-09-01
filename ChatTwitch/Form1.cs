@@ -90,11 +90,17 @@ namespace ChatTwitch
 		private bool afterMessage(string message, string nick, out string response)
 		{
 			response = "";
-			if (message == tbx_afterOnText.Text)
+			var words = tbx_afterOnText.Text.Split('|');
+
+			foreach(var word in words)
 			{
-				response = String.Format(tbx_afterDoText.Text, nick);
-				return true;
+				if (message == word)
+				{
+					response = String.Format(tbx_afterDoText.Text, nick);
+					return true;
+				}
 			}
+
 			return false;
 		}
 
