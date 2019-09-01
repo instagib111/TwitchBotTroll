@@ -62,9 +62,9 @@
 			this.lbl_suffix = new System.Windows.Forms.Label();
 			this.tbx_suffix = new System.Windows.Forms.TextBox();
 			this.ttip_suffix = new System.Windows.Forms.ToolTip(this.components);
-			this.btn_after = new System.Windows.Forms.Button();
 			this.tbx_afterOnText = new System.Windows.Forms.TextBox();
 			this.tbx_afterDoText = new System.Windows.Forms.TextBox();
+			this.btn_after = new System.Windows.Forms.Button();
 			this.lbl_afterOnText = new System.Windows.Forms.Label();
 			this.lbl_afterDoText = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.nud_minTimeRepeat)).BeginInit();
@@ -129,7 +129,7 @@
 			// tbx_send
 			// 
 			this.tbx_send.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.tbx_send.Location = new System.Drawing.Point(18, 737);
+			this.tbx_send.Location = new System.Drawing.Point(13, 717);
 			this.tbx_send.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.tbx_send.Name = "tbx_send";
 			this.tbx_send.Size = new System.Drawing.Size(1166, 26);
@@ -139,7 +139,7 @@
 			// btn_send
 			// 
 			this.btn_send.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btn_send.Location = new System.Drawing.Point(1196, 732);
+			this.btn_send.Location = new System.Drawing.Point(1196, 713);
 			this.btn_send.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.btn_send.Name = "btn_send";
 			this.btn_send.Size = new System.Drawing.Size(112, 35);
@@ -225,7 +225,7 @@
 			// lnk_OAuth
 			// 
 			this.lnk_OAuth.AutoSize = true;
-			this.lnk_OAuth.Location = new System.Drawing.Point(1401, 740);
+			this.lnk_OAuth.Location = new System.Drawing.Point(1392, 720);
 			this.lnk_OAuth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lnk_OAuth.Name = "lnk_OAuth";
 			this.lnk_OAuth.Size = new System.Drawing.Size(128, 20);
@@ -291,7 +291,7 @@
 			this.lbx_currentChat.Location = new System.Drawing.Point(18, 103);
 			this.lbx_currentChat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.lbx_currentChat.Name = "lbx_currentChat";
-			this.lbx_currentChat.Size = new System.Drawing.Size(1290, 620);
+			this.lbx_currentChat.Size = new System.Drawing.Size(1290, 600);
 			this.lbx_currentChat.TabIndex = 22;
 			// 
 			// cbx_hour
@@ -421,17 +421,6 @@
 			this.ttip_suffix.ReshowDelay = 20;
 			this.ttip_suffix.ToolTipTitle = "You can write ";
 			// 
-			// btn_after
-			// 
-			this.btn_after.ForeColor = System.Drawing.Color.Red;
-			this.btn_after.Location = new System.Drawing.Point(539, 57);
-			this.btn_after.Name = "btn_after";
-			this.btn_after.Size = new System.Drawing.Size(112, 33);
-			this.btn_after.TabIndex = 30;
-			this.btn_after.Text = "Off";
-			this.btn_after.UseVisualStyleBackColor = true;
-			this.btn_after.Click += new System.EventHandler(this.Btn_after_Click);
-			// 
 			// tbx_afterOnText
 			// 
 			this.tbx_afterOnText.Location = new System.Drawing.Point(713, 61);
@@ -451,6 +440,17 @@
 			this.tbx_afterDoText.Text = "/timeout {0} 100";
 			this.ttip_suffix.SetToolTip(this.tbx_afterDoText, "{0} = nickname");
 			this.tbx_afterDoText.Leave += new System.EventHandler(this.Tbx_afterOnText_Leave);
+			// 
+			// btn_after
+			// 
+			this.btn_after.ForeColor = System.Drawing.Color.Red;
+			this.btn_after.Location = new System.Drawing.Point(539, 57);
+			this.btn_after.Name = "btn_after";
+			this.btn_after.Size = new System.Drawing.Size(112, 33);
+			this.btn_after.TabIndex = 30;
+			this.btn_after.Text = "Off";
+			this.btn_after.UseVisualStyleBackColor = true;
+			this.btn_after.Click += new System.EventHandler(this.Btn_after_Click);
 			// 
 			// lbl_afterOnText
 			// 

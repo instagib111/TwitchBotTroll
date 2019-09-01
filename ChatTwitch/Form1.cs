@@ -47,7 +47,12 @@ namespace ChatTwitch
                 lbx_currentChat.SelectedIndex = lbx_currentChat.Items.Count - 1;
                 lbx_currentChat.SelectedIndex = -1;
             }
+
+			// save mémoire 
+			if (lbx_currentChat.Items.Count > 50)
+				lbx_currentChat.Items.RemoveAt(0);
         }
+
         // reconnection
         private void reconnect()
         {
@@ -90,15 +95,19 @@ namespace ChatTwitch
 		private bool afterMessage(string message, string nick, out string response)
 		{
 			response = "";
-			var words = tbx_afterOnText.Text.Split('|');
+			var wordsOn = tbx_afterOnText.Text.Split('|');
+			var wordsM = message.Split(' ');
 
-			foreach(var word in words)
+			foreach (var wordM in wordsM)
 			{
-				if (message == word)
+				foreach (var wordOn in wordsOn)
 				{
-					response = String.Format(tbx_afterDoText.Text, nick);
-					return true;
-				}
+					if (wordM == wordOn)
+					{
+						response = String.Format(tbx_afterDoText.Text, nick);
+						return true;
+					}
+				} 
 			}
 
 			return false;
