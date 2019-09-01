@@ -31,11 +31,8 @@
 			this.components = new System.ComponentModel.Container();
 			this.btn_connection = new System.Windows.Forms.Button();
 			this.lbl_isConnected = new System.Windows.Forms.Label();
-			this.btn_kamoulox = new System.Windows.Forms.Button();
 			this.btn_repeat = new System.Windows.Forms.Button();
 			this.tbx_repeatUserName = new System.Windows.Forms.TextBox();
-			this.tbx_send = new System.Windows.Forms.TextBox();
-			this.btn_send = new System.Windows.Forms.Button();
 			this.timer_connection = new System.Windows.Forms.Timer(this.components);
 			this.btn_setting = new System.Windows.Forms.Button();
 			this.tbx_tvTwitch = new System.Windows.Forms.TextBox();
@@ -67,6 +64,8 @@
 			this.btn_after = new System.Windows.Forms.Button();
 			this.lbl_afterOnText = new System.Windows.Forms.Label();
 			this.lbl_afterDoText = new System.Windows.Forms.Label();
+			this.tbx_send = new System.Windows.Forms.TextBox();
+			this.btn_send = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.nud_minTimeRepeat)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.nud_timeByLettre)).BeginInit();
 			this.SuspendLayout();
@@ -93,17 +92,6 @@
 			this.lbl_isConnected.TabIndex = 2;
 			this.lbl_isConnected.Text = "Disconnected";
 			// 
-			// btn_kamoulox
-			// 
-			this.btn_kamoulox.Location = new System.Drawing.Point(762, 18);
-			this.btn_kamoulox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btn_kamoulox.Name = "btn_kamoulox";
-			this.btn_kamoulox.Size = new System.Drawing.Size(112, 35);
-			this.btn_kamoulox.TabIndex = 3;
-			this.btn_kamoulox.Text = "Kamoulox";
-			this.btn_kamoulox.UseVisualStyleBackColor = true;
-			this.btn_kamoulox.Click += new System.EventHandler(this.btn_kamoulox_Click);
-			// 
 			// btn_repeat
 			// 
 			this.btn_repeat.ForeColor = System.Drawing.Color.Red;
@@ -125,28 +113,6 @@
 			this.tbx_repeatUserName.TabIndex = 5;
 			this.ttip_suffix.SetToolTip(this.tbx_repeatUserName, "sépare tes pseudo par un espace");
 			this.tbx_repeatUserName.TextChanged += new System.EventHandler(this.tbx_repeatUserName_TextChanged);
-			// 
-			// tbx_send
-			// 
-			this.tbx_send.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.tbx_send.Location = new System.Drawing.Point(13, 717);
-			this.tbx_send.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.tbx_send.Name = "tbx_send";
-			this.tbx_send.Size = new System.Drawing.Size(1166, 26);
-			this.tbx_send.TabIndex = 7;
-			this.tbx_send.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbx_send_KeyPress);
-			// 
-			// btn_send
-			// 
-			this.btn_send.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btn_send.Location = new System.Drawing.Point(1196, 713);
-			this.btn_send.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.btn_send.Name = "btn_send";
-			this.btn_send.Size = new System.Drawing.Size(112, 35);
-			this.btn_send.TabIndex = 8;
-			this.btn_send.Text = "Send";
-			this.btn_send.UseVisualStyleBackColor = true;
-			this.btn_send.Click += new System.EventHandler(this.btn_send_Click);
 			// 
 			// timer_connection
 			// 
@@ -470,12 +436,34 @@
 			this.lbl_afterDoText.TabIndex = 34;
 			this.lbl_afterDoText.Text = "Write";
 			// 
+			// tbx_send
+			// 
+			this.tbx_send.Location = new System.Drawing.Point(12, 722);
+			this.tbx_send.Name = "tbx_send";
+			this.tbx_send.Size = new System.Drawing.Size(1171, 26);
+			this.tbx_send.TabIndex = 35;
+			this.tbx_send.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbx_send_KeyPress);
+			// 
+			// btn_send
+			// 
+			this.btn_send.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btn_send.Location = new System.Drawing.Point(1196, 632);
+			this.btn_send.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.btn_send.Name = "btn_send";
+			this.btn_send.Size = new System.Drawing.Size(112, 35);
+			this.btn_send.TabIndex = 1;
+			this.btn_send.Text = "Send";
+			this.btn_send.UseVisualStyleBackColor = true;
+			this.btn_send.Click += new System.EventHandler(this.btn_send_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ButtonShadow;
 			this.ClientSize = new System.Drawing.Size(1617, 760);
+			this.Controls.Add(this.btn_send);
+			this.Controls.Add(this.tbx_send);
 			this.Controls.Add(this.lbl_afterDoText);
 			this.Controls.Add(this.lbl_afterOnText);
 			this.Controls.Add(this.tbx_afterDoText);
@@ -501,11 +489,8 @@
 			this.Controls.Add(this.tbx_userName);
 			this.Controls.Add(this.tbx_tvTwitch);
 			this.Controls.Add(this.btn_setting);
-			this.Controls.Add(this.btn_send);
-			this.Controls.Add(this.tbx_send);
 			this.Controls.Add(this.tbx_repeatUserName);
 			this.Controls.Add(this.btn_repeat);
-			this.Controls.Add(this.btn_kamoulox);
 			this.Controls.Add(this.lbl_isConnected);
 			this.Controls.Add(this.btn_connection);
 			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -524,11 +509,8 @@
 
         private System.Windows.Forms.Button btn_connection;
         private System.Windows.Forms.Label lbl_isConnected;
-        private System.Windows.Forms.Button btn_kamoulox;
         private System.Windows.Forms.Button btn_repeat;
         private System.Windows.Forms.TextBox tbx_repeatUserName;
-        private System.Windows.Forms.TextBox tbx_send;
-        private System.Windows.Forms.Button btn_send;
         private System.Windows.Forms.Timer timer_connection;
         private System.Windows.Forms.Button btn_setting;
         private System.Windows.Forms.TextBox tbx_tvTwitch;
@@ -560,6 +542,8 @@
 		private System.Windows.Forms.TextBox tbx_afterDoText;
 		private System.Windows.Forms.Label lbl_afterOnText;
 		private System.Windows.Forms.Label lbl_afterDoText;
+		private System.Windows.Forms.TextBox tbx_send;
+		private System.Windows.Forms.Button btn_send;
 	}
 }
 
